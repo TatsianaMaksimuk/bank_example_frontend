@@ -6,9 +6,9 @@ import { FC, useState } from "react";
 const Main: FC = () => {
     const [getCounter, setCounter] = useState<number>(0);
     const [getHundreedCounter, setHundreedCounter] = useState<number>(100);
-    //add -1 button
-    //add another state starting value 100
-    //Create three buttons that each affect 100 differently - side by side
+    //add -1 button - done
+    //add another state starting value 100 - done
+    //Create three buttons that each affect 100 differently - side by side - done
     //add a text field and button to change the counter to the value in the field//optional
     return (
         <div>
@@ -24,7 +24,7 @@ const Main: FC = () => {
                 }}>Minus Count!</button>
             </div>
             <div>
-                <p>Counter 100: {getHundreedCounter}</p>
+                <p>One hundreed counter: {getHundreedCounter}</p>
                 <button onClick={() => {
                     setHundreedCounter(getHundreedCounter * 5);
                 }}>Multiply by 5</button>
